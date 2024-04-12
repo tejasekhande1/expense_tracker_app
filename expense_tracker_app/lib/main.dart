@@ -1,4 +1,4 @@
-import 'package:expense_tracker_app/constant.dart';
+import 'package:expense_tracker_app/screens/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,11 +11,6 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text(AppConstant.appName),
-        ),
-      ),
-    );
+        debugShowCheckedModeBanner: false, home: HomeScreen());
   }
 }
